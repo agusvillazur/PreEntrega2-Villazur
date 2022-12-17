@@ -1,0 +1,36 @@
+.footer {
+    width: $w-100;
+    margin-top: auto;
+    background-color: #000000b9;
+
+    ul{
+        padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+    .footer-creds{
+        display: flex;
+        justify-content: space-between;
+        color: $keyColor2;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 1rem;
+        .copy-creds{
+            padding-left: 1rem;
+        }
+        .socials{
+            ul{
+                display: flex;
+                flex-flow: row; 
+            }
+            li{
+                padding-right: 1rem;
+            }
+            a{
+                color: $keyColor2;
+                font-size: map-get($map: $fontSize, $key: 'dos' );
+            }
+        }
+    }
+}

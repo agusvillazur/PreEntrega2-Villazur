@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../media/wallpaper2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+  background-color: rgba(0, 0, 0, 0.7254901961);
+}
+.footer ul {
+  padding: 0;
+}
+.footer li {
+  list-style: none;
+}
+.footer .footer-creds {
+  display: flex;
+  justify-content: space-between;
+  color: #37C5F3;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.footer .footer-creds .copy-creds {
+  padding-left: 1rem;
+}
+.footer .footer-creds .socials ul {
+  display: flex;
+  flex-flow: row;
+}
+.footer .footer-creds .socials li {
+  padding-right: 1rem;
+}
+.footer .footer-creds .socials a {
+  color: #37C5F3;
+  font-size: 1.2rem;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.7254901961);
+}
+
+.logo {
+  width: 10rem;
+  margin-left: 7vh;
+}
+
+.logoCart {
+  width: 2.5rem;
+  margin-right: 7vh;
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
